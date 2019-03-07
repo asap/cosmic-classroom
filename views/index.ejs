@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= page.title %></title>
+  </head>
+  <body>
+    <h1><%= teacher.name %></h1>
+    <% students.forEach(student => { %>
+      <%= student.name %>
+      <% student.nicknames.forEach(nickname => { %>
+        <p><%= nickname %></p>
+      <% }) %>
+    <% }) %>
+  </body>
+</html>
